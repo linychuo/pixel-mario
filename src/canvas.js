@@ -18,7 +18,7 @@ export default class Canvas extends Component {
     onPixelClick(_color) {
         let newColor = this.getRandomColor();
         let _colors = this.props.colors;
-        for(let c in _colors) {
+        for (let c in _colors) {
             if (_colors[c] === _color) {
                 _colors[c] = newColor;
             }
@@ -27,8 +27,8 @@ export default class Canvas extends Component {
             colors: _colors
         })
     }
-    
-    render({pixelData, colors, pixelSize, background}) {
+
+    render({ pixelData, colors, pixelSize, background }) {
         const main_style = {
             background: background,
             "min-height": "100vh"
@@ -38,11 +38,11 @@ export default class Canvas extends Component {
         };
         return (
             <div style={main_style}>
-                {pixelData.map(row => 
+                {pixelData.map(row =>
                     <div style={row_style}>
-                         {row.map(col => 
-                            <Pixel color={colors[col]} size={pixelSize} handle={this.onPixelClick}/>
-                         )}
+                        {row.map(col =>
+                            <Pixel color={colors[col]} size={pixelSize} handle={this.onPixelClick} />
+                        )}
                     </div>
                 )}
             </div>

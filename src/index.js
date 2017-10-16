@@ -18,7 +18,7 @@ const pixelData = [
     [_, _, B, S, B, B, S, S, S, B, S, S, B, _],
     [_, _, B, B, S, S, S, S, B, B, B, B, _, _],
     [_, _, _, _, S, S, S, S, S, S, S, _, _, _],
-    [_, _, _, C, C, O, C, C, C, C, _, _, _, _],
+    [_, _, _, C, C, O, C, C, O, C, _, _, _, _],
     [_, _, C, C, C, O, C, C, O, C, C, C, _, _],
     [_, C, C, C, C, O, O, O, O, C, C, C, C, _],
     [_, W, W, C, O, Y, O, O, Y, O, C, W, W, _],
@@ -40,6 +40,6 @@ const colors = {
 };
 
 render(
-    <Canvas pixelData={pixelData} colors={colors} pixelSize="20px" background="white"/>,
+    <Canvas pixelData={pixelData} colors={colors} pixelSize="20px" background="white" />,
     document.body
 );

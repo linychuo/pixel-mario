@@ -10,9 +10,9 @@ export default class Pixel extends Component {
         this.props.handle(this.props.color);
     }
 
-    render({color, size}) {
+    render({ color, size }) {
         const cstyle = {
-            "background-color": "rgb(" + color + ")",
+            "background-color": `rgb(${color})`,
             width: size,
             height: size,
             display: "inline-block"
