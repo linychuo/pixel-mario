@@ -1,4 +1,6 @@
 import { Component } from 'preact';
+import styles from './style.css'
+
 
 export default class Pixel extends Component {
     constructor() {

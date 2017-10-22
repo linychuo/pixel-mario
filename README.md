@@ -1,4 +1,4 @@
-# preact-demo
+# preact-pixel
 preact pixel demo
 
 # usage

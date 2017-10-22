@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import Pixel from './pixel';
+import styles from './style'
 
 export default class Canvas extends Component {
     constructor() {
@@ -31,13 +32,12 @@ export default class Canvas extends Component {
     render({ pixelData, colors, pixelSize, background }) {
         const main_style = {
             background: background,
-            "min-height": "100vh"
         };
         const row_style = {
             height: pixelSize
         };
         return (
-            <div style={main_style}>
+            <div style={main_style} class={styles.canvas_main}>
                 {pixelData.map(row =>
                     <div style={row_style}>
                         {row.map(col =>

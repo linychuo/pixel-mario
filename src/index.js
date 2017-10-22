@@ -1,5 +1,5 @@
 import { render } from 'preact';
-import Canvas from './canvas';
+import Canvas from './components/canvas';
 
 const C = "C";
 const B = "B";
