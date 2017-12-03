@@ -1,24 +1,22 @@
 import { Component } from 'preact';
-import styles from './style.css'
-
 
 export default class Pixel extends Component {
-    constructor() {
-        super();
-        this.handleClick = this.handleClick.bind(this);
-    }
+	handleClick(e) {
+		this.props.handle(this.props.color);
+	}
 
-    handleClick(e) {
-        this.props.handle(this.props.color);
-    }
+	constructor() {
+		super();
+		this.handleClick = this.handleClick.bind(this);
+	}
 
-    render({ color, size }) {
-        const cstyle = {
-            "background-color": `rgb(${color})`,
-            width: size,
-            height: size,
-            display: "inline-block"
-        };
-        return <div style={cstyle} onClick={this.handleClick}></div>
-    }
+	render({ color, size }) {
+		const cstyle = {
+			'background-color': `rgb(${color})`,
+			width: size,
+			height: size,
+			display: 'inline-block'
+		};
+		return <div style={cstyle} onClick={this.handleClick} />;
+	}
 }
