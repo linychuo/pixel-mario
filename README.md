@@ -19,5 +19,5 @@ docker build -t preact-pixel .
 ```
 2. run image
 ```bash
-docker run preact-pixel
+docker run -p 8080:8080 preact-pixel
 ```

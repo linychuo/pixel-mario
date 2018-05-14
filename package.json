@@ -5,7 +5,7 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --no-prerender",
-    "serve": "preact serve",
+    "serve": "serve ./build -p 8080 -o",
     "dev": "preact watch",
     "lint": "eslint src"
   },
@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "preact": "^8.2.1",
-    "preact-router": "^2.5.5"
+    "serve": "^6.5.6"
   }
 }
