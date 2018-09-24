@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --no-prerender",
+    "build": "cross-env NODE_ENV=production preact build --no-prerender",
     "serve": "serve ./build -p 8080 -o",
     "dev": "preact watch",
     "lint": "eslint src"
