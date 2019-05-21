@@ -8,7 +8,7 @@ srcDir        = "src"
 binDir        = "dist"
 backend       = "js"
 
-bin           = @["preact_pixel.js"]
+bin           = @["pixel_mario.js"]
 
 # Dependencies
 
