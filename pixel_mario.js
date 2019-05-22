@@ -593,7 +593,7 @@ function on_pixel_click_135110(value_135112, ev_135113) {
 						i_135419 = addInt(i_135419, 1);
 						if (!(((element_list_135193 != null ? element_list_135193.length : 0) == l_135421))) {
 						F.line = 3916;
-						failed_assert_impl_20481(makeNimstrLit("/home/travis/.choosenim/toolchains/nim-0.19.4/lib/system.nim(3916, 11) `len(a) == L` seq modified while iterating over it"));
+						failed_assert_impl_20481(makeNimstrLit("/Users/travis/.choosenim/toolchains/nim-0.19.4/lib/system.nim(3916, 11) `len(a) == L` seq modified while iterating over it"));
 						}
 						
 					}
