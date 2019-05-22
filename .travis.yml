@@ -25,7 +25,7 @@ script:
   - nimble build
 
 before_deploy:
-  - copy ./src/index.html > ./dist/index.html
+  - cp ./src/index.html ./dist/index.html
 
 deploy:
   provider: pages
