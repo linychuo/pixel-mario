@@ -1,13 +1,16 @@
-import dom, strtabs, jscore, strutils
+import dom, jscore, strutils
+
+type
+  PixelUnit = tuple[value, color: string]
 
 const
-  C = "C"
-  B = "B"
-  S = "S"
-  O = "O"
-  Y = "Y"
-  W = "W"
-  _ = "_"
+  C:PixelUnit = ("C", "255, 0, 0")
+  B:PixelUnit = ("B", "100, 50, 0")
+  S:PixelUnit = ("S", "255, 200, 150")
+  O:PixelUnit = ("O", "0, 0, 255")
+  Y:PixelUnit = ("Y", "255, 255, 0")
+  W:PixelUnit = ("W", "255, 255, 255")
+  _:PixelUnit = ("_", "229. 230, 232")
   pixelData = [
     [_, _, _, _, _, _, _, _, _, _, _, _, _, _],
     [_, _, _, _, C, C, C, C, C, _, _, _, _, _],
@@ -26,31 +29,21 @@ const
     [_, _, _, O, O, O, _, _, O, O, O, _, _, _],
     [_, _, B, B, B, _, _, _, _, B, B, B, _, _],
     [_, B, B, B, B, _, _, _, _, B, B, B, B, _]
-  ];
-
-let colors = newStringTable()
-colors[C] = "255, 0, 0"
-colors[B] = "100, 50, 0"
-colors[S] = "255, 200, 150"
-colors[O] = "0, 0, 255"
-colors[Y] = "255, 255, 0"
-colors[W] = "255, 255, 255"
-colors[_] = "229, 230, 232"
-
-var root:Element
-
-proc main()
+  ]
 
 proc getRandomValue(): int = Math.floor(Math.random() * 256)
 
 proc onPixelClick(value: string, ev: Event) =
-  colors[value] = join([getRandomValue(), getRandomValue(), getRandomValue()], " , ")
-  document.body.removeChild(root)
-  main()
+  let newColor = join([getRandomValue(), getRandomValue(), getRandomValue()], " , ")
+  let elementList = document.querySelectorAll("div[data-value='" & value & "']")
+  for item in elementList:
+    item.style.backgroundColor = "rgb(" & newColor & ")"
 
-proc renderPixel(value: string): Element =
+proc renderPixel(colData: PixelUnit): Element =
   let col = document.createElement("div")
-  col.style.backgroundColor = "rgb(" & colors[value] & ")"
+  let value = colData.value
+  col.setAttribute("data-value", value)
+  col.style.backgroundColor = "rgb(" & colData.color & ")"
   col.style.width = "20px"
   col.style.height = "20px"
   col.style.display = "inline-block"
@@ -63,12 +56,12 @@ proc renderCanvas(root: Element) =
   for rowData in pixelData:
     let row = document.createElement("div")
     row.style.height = "20px"
-    for col in rowData:
-      row.appendChild(renderPixel(col))
+    for colData in rowData:
+      row.appendChild(renderPixel(colData))
     root.appendChild(row)
 
 proc main() =
-  root = document.createElement("div")
+  let root = document.createElement("div")
   root.style.background = "white"
   root.style.minHeight = "100vh"
   renderCanvas(root)

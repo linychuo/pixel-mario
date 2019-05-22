@@ -12,15 +12,12 @@ if (typeof Uint16Array === 'undefined') Uint16Array = Array;
 if (typeof Uint32Array === 'undefined') Uint32Array = Array;
 if (typeof Float32Array === 'undefined') Float32Array = Array;
 if (typeof Float64Array === 'undefined') Float64Array = Array;
-var NTI3852 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3854 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI123023 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
-var NTI123022 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
 var NTI3850 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3862 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3842 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3846 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI104 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI15346 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI3808 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3918 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
 var NTI114 = {size: 0,kind: 40,base: null,node: null,finalizer: null};
 var NTI140 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
@@ -28,30 +25,15 @@ var NTI3912 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
 var NTI3826 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3828 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3858 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3808 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI120202 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI130 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
 var NTI138 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
-var NTI120204 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI120206 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI104 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI120208 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NNI120204 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI138, name: "Field0", sons: null}, 
-{kind: 1, offset: "Field1", len: 0, typ: NTI138, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI130, name: "Field2", sons: null}]};
-NTI120204.node = NNI120204;
-NTI120206.base = NTI120204;
-var NNI120202 = {kind: 2, offset: 0, typ: null, name: null, len: 3, sons: {"0": {kind: 1, offset: 0, typ: NTI120202, name: "modeCaseSensitive", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI120202, name: "modeCaseInsensitive", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI120202, name: "modeStyleInsensitive", len: 0, sons: null}}};
-NTI120202.node = NNI120202;
-var NNI120208 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "counter", len: 0, typ: NTI104, name: "counter", sons: null}, 
-{kind: 1, offset: "data", len: 0, typ: NTI120206, name: "data", sons: null}, 
-{kind: 1, offset: "mode", len: 0, typ: NTI120202, name: "mode", sons: null}]};
-NTI120208.node = NNI120208;
-var NNI3808 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3808.node = NNI3808;
-NTI120208.base = NTI3808;
+var NTI119015 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI119037 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI119036 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NNI119015 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI138, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI138, name: "Field1", sons: null}]};
+NTI119015.node = NNI119015;
+NTI119037.base = NTI119015;
+NTI119036.base = NTI119037;
 var NNI3858 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3858.node = NNI3858;
 var NNI3828 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
@@ -65,6 +47,8 @@ var NNI3826 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 
 {kind: 1, offset: "raise_id", len: 0, typ: NTI114, name: "raise_id", sons: null}, 
 {kind: 1, offset: "up", len: 0, typ: NTI3918, name: "up", sons: null}]};
 NTI3826.node = NNI3826;
+var NNI3808 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3808.node = NNI3808;
 NTI3826.base = NTI3808;
 NTI3828.base = NTI3826;
 NTI3858.base = NTI3828;
@@ -77,20 +61,9 @@ var NNI3842 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3842.node = NNI3842;
 NTI3842.base = NTI3828;
 NTI3846.base = NTI3842;
-var NNI3862 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3862.node = NNI3862;
-NTI3862.base = NTI3828;
 var NNI3850 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3850.node = NNI3850;
 NTI3850.base = NTI3828;
-NTI123023.base = NTI138;
-NTI123022.base = NTI123023;
-var NNI3854 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3854.node = NNI3854;
-var NNI3852 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3852.node = NNI3852;
-NTI3852.base = NTI3828;
-NTI3854.base = NTI3852;
 
 function makeNimstrLit(c_16225) {
 		  var ln = c_16225.length;
@@ -200,6 +173,7 @@ function nimCopy(dest_17230, src_17231, ti_17232) {
 	return result_17655;
 
 }
+						var pixel_data_119035 = nimCopy(null, [[{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("S"), Field1: makeNimstrLit("255, 200, 150")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("Y"), Field1: makeNimstrLit("255, 255, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("Y"), Field1: makeNimstrLit("255, 255, 0")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("C"), Field1: makeNimstrLit("255, 0, 0")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("W"), Field1: makeNimstrLit("255, 255, 255")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("O"), Field1: makeNimstrLit("0, 0, 255")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}], [{Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("B"), Field1: makeNimstrLit("100, 50, 0")}, {Field0: makeNimstrLit("_"), Field1: makeNimstrLit("229. 230, 232")}]], NTI119036);
 
 function arrayConstr(len_17716, value_17717, typ_17718) {
 		    var result = new Array(len_17716);
@@ -314,15 +288,6 @@ function chckIndx(i_17735, a_17736, b_17737) {
 
 }
 
-function subInt(a_16621, b_16622) {
-		    var result = a_16621 - b_16622;
-    if (result > 2147483647 || result < -2147483648) raiseOverflow();
-    return result;
-  
-
-	
-}
-
 function addInt(a_16603, b_16604) {
 		    var result = a_16603 + b_16604;
     if (result > 2147483647 || result < -2147483648) raiseOverflow();
@@ -331,60 +296,6 @@ function addInt(a_16603, b_16604) {
 
 	
 }
-var ConstSet2 = setConstr([65, 90]);
-
-function chckRange(i_17754, a_17755, b_17756) {
-			var Tmp1;
-
-	var result_17757 = 0;
-
-	BeforeRet: do {
-			if (!(a_17755 <= i_17754)) Tmp1 = false; else {				Tmp1 = (i_17754 <= b_17756);			}		if (Tmp1) {
-		result_17757 = i_17754;
-		break BeforeRet;
-		}
-		else {
-		raiseRangeError();
-		}
-		
-	} while (false);
-
-	return result_17757;
-
-}
-var ConstSet3 = setConstr([65, 90]);
-
-function nimMin(a_16940, b_16941) {
-		var Tmp1;
-
-	var result_16942 = 0;
-
-	BeforeRet: do {
-		if ((a_16940 <= b_16941)) {
-		Tmp1 = a_16940;
-		}
-		else {
-		Tmp1 = b_16941;
-		}
-		
-		result_16942 = Tmp1;
-		break BeforeRet;
-	} while (false);
-
-	return result_16942;
-
-}
-var ConstSet4 = setConstr([65, 90]);
-
-function mulInt(a_16639, b_16640) {
-		    var result = a_16639 * b_16640;
-    if (result > 2147483647 || result < -2147483648) raiseOverflow();
-    return result;
-  
-
-	
-}
-						var pixel_data_123021 = nimCopy(null, [[makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("S"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("C"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("C"), makeNimstrLit("O"), makeNimstrLit("Y"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("Y"), makeNimstrLit("O"), makeNimstrLit("C"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("W"), makeNimstrLit("W"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("O"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("_"), makeNimstrLit("_")], [makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("_"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("B"), makeNimstrLit("_")]], NTI123022);
 var nimvm_7173 = false;
 var nim_program_result = 0;
 var global_raise_hook_13418 = [null];
@@ -398,25 +309,6 @@ var out_of_mem_hook_13426 = [null];
       return (v - v % 1)   ||   (v < 0 ? -0 : v === 0 ? v : 0);
     };
   }
-var object_id_118246 = [0];
-
-function nstnewStringTable(mode_121234) {
-	var result_121235 = null;
-
-	var F={procname:"strtabs.newStringTable",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 177;
-		result_121235 = {m_type: NTI120208, counter: 0, data: null, mode: 0};
-		F.line = 178;
-		result_121235.mode = mode_121234;
-		F.line = 179;
-		result_121235.counter = 0;
-		F.line = 180;
-		result_121235.data = new Array(64); for (var i=0;i<64;++i) {result_121235.data[i]={Field0: null, Field1: null, Field2: false};}	framePtr = F.prev;
-
-	return result_121235;
-
-}
 
 function is_fat_pointer_17201(ti_17203) {
 	var result_17204 = false;
@@ -588,6 +480,46 @@ function raiseIndexError() {
 	
 }
 
+function join_119120(a_119125, sep_119127) {
+	var result_119128 = null;
+
+		result_119128 = nimCopy(null, [], NTI138);
+		L1: do {
+			var i_119173 = 0;
+			var x_119174 = 0;
+			var i_119180 = 0;
+			L2: do {
+					L3: while (true) {
+					if (!(i_119180 < (a_119125 != null ? a_119125.length : 0))) break L3;
+						i_119173 = i_119180;
+						x_119174 = a_119125[i_119180];
+						if ((0 < i_119173)) {
+						if (result_119128 != null) { result_119128 = (result_119128).concat(sep_119127); } else { result_119128 = sep_119127.slice(); };
+						}
+						
+						if (result_119128 != null) { result_119128 = (result_119128).concat(cstrToNimstr((x_119174)+"")); } else { result_119128 = cstrToNimstr((x_119174)+"").slice(); };
+						i_119180 += 1;
+					}
+			} while(false);
+		} while(false);
+
+	return result_119128;
+
+}
+
+function get_random_value_119085() {
+	var result_119087 = 0;
+
+	var F={procname:"pixel_mario.getRandomValue",prev:framePtr,filename:"pixel_mario.nim",line:0};
+	framePtr = F;
+		F.line = 34;
+		result_119087 = Math.floor((Math.random() * 2.5600000000000000e+002));
+	framePtr = F.prev;
+
+	return result_119087;
+
+}
+
 function raiseOverflow() {
 		var e_16065 = null;
 		e_16065 = {m_type: NTI3846, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
@@ -596,420 +528,6 @@ function raiseOverflow() {
 		raiseException(e_16065, "OverflowError");
 
 	
-}
-
-function HEX21HEX26_118016(h_118018, val_118019) {
-	var result_118020 = 0;
-
-	var F={procname:"hashes.!&",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\hashes.nim",line:0};
-	framePtr = F;
-		F.line = 52;
-		result_118020 = ((h_118018 + val_118019) >>> 0);
-		F.line = 53;
-		result_118020 = ((result_118020 + (result_118020 << 10)) >>> 0);
-		F.line = 54;
-		result_118020 = (result_118020 ^ ((result_118020 >>> 0) >>> 6));
-	framePtr = F.prev;
-
-	return result_118020;
-
-}
-
-function HEX21HEX24_118070(h_118072) {
-	var result_118073 = 0;
-
-	var F={procname:"hashes.!$",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\hashes.nim",line:0};
-	framePtr = F;
-		F.line = 59;
-		result_118073 = ((h_118072 + (h_118072 << 3)) >>> 0);
-		F.line = 60;
-		result_118073 = (result_118073 ^ ((result_118073 >>> 0) >>> 11));
-		F.line = 61;
-		result_118073 = ((result_118073 + (result_118073 << 15)) >>> 0);
-	framePtr = F.prev;
-
-	return result_118073;
-
-}
-
-function hash_118900(x_118902) {
-	var result_118903 = 0;
-
-	var F={procname:"hashes.hash",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\hashes.nim",line:0};
-	framePtr = F;
-		F.line = 132;
-		var h_118904 = 0;
-		L1: do {
-			F.line = 133;
-			var i_118916 = 0;
-			F.line = 2016;
-			var colontmp__118924 = 0;
-			F.line = 133;
-			colontmp__118924 = subInt((x_118902 != null ? x_118902.length : 0), 1);
-			F.line = 2019;
-			var res_118927 = 0;
-			L2: do {
-				F.line = 2020;
-					L3: while (true) {
-					if (!(res_118927 <= colontmp__118924)) break L3;
-						F.line = 2021;
-						i_118916 = res_118927;
-						F.line = 134;
-						h_118904 = HEX21HEX26_118016(h_118904, x_118902[chckIndx(i_118916, 0, x_118902.length+0-1)-0]);
-						F.line = 2022;
-						res_118927 = addInt(res_118927, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 135;
-		result_118903 = HEX21HEX24_118070(h_118904);
-	framePtr = F.prev;
-
-	return result_118903;
-
-}
-
-function raiseRangeError() {
-		var e_16125 = null;
-		e_16125 = {m_type: NTI3862, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
-		e_16125.message = nimCopy(null, makeNimstrLit("value out of range"), NTI138);
-		e_16125.parent = null;
-		raiseException(e_16125, "RangeError");
-
-	
-}
-
-function hash_ignore_case_119228(x_119230) {
-	var result_119231 = 0;
-
-	var F={procname:"hashes.hashIgnoreCase",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\hashes.nim",line:0};
-	framePtr = F;
-		F.line = 199;
-		var h_119232 = 0;
-		L1: do {
-			F.line = 200;
-			var i_119244 = 0;
-			F.line = 2016;
-			var colontmp__119284 = 0;
-			F.line = 200;
-			colontmp__119284 = subInt((x_119230 != null ? x_119230.length : 0), 1);
-			F.line = 2019;
-			var res_119287 = 0;
-			L2: do {
-				F.line = 2020;
-					L3: while (true) {
-					if (!(res_119287 <= colontmp__119284)) break L3;
-						F.line = 2021;
-						i_119244 = res_119287;
-						F.line = 201;
-						var c_119245 = x_119230[chckIndx(i_119244, 0, x_119230.length+0-1)-0];
-						if ((ConstSet2[c_119245] != undefined)) {
-						F.line = 203;
-						c_119245 = chckRange(addInt(c_119245, 32), 0, 255);
-						}
-						
-						F.line = 204;
-						h_119232 = HEX21HEX26_118016(h_119232, c_119245);
-						F.line = 2022;
-						res_119287 = addInt(res_119287, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 205;
-		result_119231 = HEX21HEX24_118070(h_119232);
-	framePtr = F.prev;
-
-	return result_119231;
-
-}
-
-function hash_ignore_style_119072(x_119074) {
-	var result_119075 = 0;
-
-	var F={procname:"hashes.hashIgnoreStyle",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\hashes.nim",line:0};
-	framePtr = F;
-		F.line = 163;
-		var h_119076 = 0;
-		F.line = 164;
-		var i_119078 = 0;
-		F.line = 165;
-		var x_len_119079 = (x_119074 != null ? x_119074.length : 0);
-		L1: do {
-			F.line = 166;
-				L2: while (true) {
-				if (!(i_119078 < x_len_119079)) break L2;
-					F.line = 167;
-					var c_119080 = x_119074[chckIndx(i_119078, 0, x_119074.length+0-1)-0];
-					if ((c_119080 == 95)) {
-					F.line = 169;
-					i_119078 = addInt(i_119078, 1);
-					}
-					else {
-						if ((ConstSet3[c_119080] != undefined)) {
-						F.line = 172;
-						c_119080 = chckRange(addInt(c_119080, 32), 0, 255);
-						}
-						
-						F.line = 173;
-						h_119076 = HEX21HEX26_118016(h_119076, c_119080);
-						F.line = 174;
-						i_119078 = addInt(i_119078, 1);
-					}
-					
-				}
-		} while(false);
-		F.line = 176;
-		result_119075 = HEX21HEX24_118070(h_119076);
-	framePtr = F.prev;
-
-	return result_119075;
-
-}
-
-function myhash_120412(t_120414, key_120415) {
-	var result_120416 = 0;
-
-	var F={procname:"strtabs.myhash",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 76;
-		switch (t_120414.mode) {
-		case 0:
-			F.line = 77;
-			result_120416 = hash_118900(key_120415);
-			break;
-		case 1:
-			F.line = 78;
-			result_120416 = hash_ignore_case_119228(key_120415);
-			break;
-		case 2:
-			F.line = 79;
-			result_120416 = hash_ignore_style_119072(key_120415);
-			break;
-		}
-	framePtr = F.prev;
-
-	return result_120416;
-
-}
-
-function cmpStrings(a_16418, b_16419) {
-		    if (a_16418 == b_16419) return 0;
-    if (!a_16418) return -1;
-    if (!b_16419) return 1;
-    for (var i = 0; i < a_16418.length && i < b_16419.length; i++) {
-      var result = a_16418[i] - b_16419[i];
-      if (result != 0) return result;
-    }
-    return a_16418.length - b_16419.length;
-  
-
-	
-}
-
-function cmp_7058(x_7060, y_7061) {
-	var result_16438 = 0;
-
-	BeforeRet: do {
-		result_16438 = cmpStrings(x_7060, y_7061);
-		break BeforeRet;
-	} while (false);
-
-	return result_16438;
-
-}
-
-function nsuToLowerAsciiChar(c_109213) {
-	var result_109214 = 0;
-
-	var F={procname:"strutils.toLowerAscii",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strutils.nim",line:0};
-	framePtr = F;
-		if ((ConstSet4[c_109213] != undefined)) {
-		F.line = 212;
-		result_109214 = chckRange(addInt(c_109213, 32), 0, 255);
-		}
-		else {
-			F.line = 214;
-			result_109214 = c_109213;
-		}
-		
-	framePtr = F.prev;
-
-	return result_109214;
-
-}
-
-function nsuCmpIgnoreCase(a_109518, b_109519) {
-	var result_109520 = 0;
-
-	var F={procname:"strutils.cmpIgnoreCase",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strutils.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		F.line = 283;
-		var i_109522 = 0;
-		F.line = 284;
-		var m_109523 = nimMin((a_109518 != null ? a_109518.length : 0), (b_109519 != null ? b_109519.length : 0));
-		L1: do {
-			F.line = 285;
-				L2: while (true) {
-				if (!(i_109522 < m_109523)) break L2;
-					F.line = 286;
-					result_109520 = subInt(nsuToLowerAsciiChar(a_109518[chckIndx(i_109522, 0, a_109518.length+0-1)-0]), nsuToLowerAsciiChar(b_109519[chckIndx(i_109522, 0, b_109519.length+0-1)-0]));
-					if (!((result_109520 == 0))) {
-					F.line = 287;
-					break BeforeRet;
-					}
-					
-					F.line = 288;
-					i_109522 = addInt(i_109522, 1);
-				}
-		} while(false);
-		F.line = 289;
-		result_109520 = subInt((a_109518 != null ? a_109518.length : 0), (b_109519 != null ? b_109519.length : 0));
-	} while (false);
-	framePtr = F.prev;
-
-	return result_109520;
-
-}
-
-function nsuCmpIgnoreStyle(a_109561, b_109562) {
-					var Tmp7;
-					var Tmp8;
-
-	var result_109563 = 0;
-
-	BeforeRet: do {
-		var i_109565 = 0;
-		var j_109567 = 0;
-		L1: do {
-				L2: while (true) {
-				if (!true) break L2;
-					L3: do {
-							L4: while (true) {
-							if (!((i_109565 < (a_109561 != null ? a_109561.length : 0)) && (a_109561[i_109565] == 95))) break L4;
-								i_109565 += 1;
-							}
-					} while(false);
-					L5: do {
-							L6: while (true) {
-							if (!((j_109567 < (b_109562 != null ? b_109562.length : 0)) && (b_109562[j_109567] == 95))) break L6;
-								j_109567 += 1;
-							}
-					} while(false);
-					if ((i_109565 < (a_109561 != null ? a_109561.length : 0))) {
-					Tmp7 = nsuToLowerAsciiChar(a_109561[i_109565]);
-					}
-					else {
-					Tmp7 = 0;
-					}
-					
-					var aa_109586 = Tmp7;
-					if ((j_109567 < (b_109562 != null ? b_109562.length : 0))) {
-					Tmp8 = nsuToLowerAsciiChar(b_109562[j_109567]);
-					}
-					else {
-					Tmp8 = 0;
-					}
-					
-					var bb_109587 = Tmp8;
-					result_109563 = (aa_109586 - bb_109587);
-					if (!((result_109563 == 0))) {
-					break BeforeRet;
-					}
-					
-					if (((a_109561 != null ? a_109561.length : 0) <= i_109565)) {
-					if (((b_109562 != null ? b_109562.length : 0) <= j_109567)) {
-					result_109563 = 0;
-					break BeforeRet;
-					}
-					
-					result_109563 = -1;
-					break BeforeRet;
-					}
-					else {
-					if (((b_109562 != null ? b_109562.length : 0) <= j_109567)) {
-					result_109563 = 1;
-					break BeforeRet;
-					}
-					}
-					i_109565 += 1;
-					j_109567 += 1;
-				}
-		} while(false);
-	} while (false);
-
-	return result_109563;
-
-}
-
-function my_cmp_120432(t_120434, a_120435, b_120436) {
-	var result_120437 = false;
-
-	var F={procname:"strtabs.myCmp",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 82;
-		switch (t_120434.mode) {
-		case 0:
-			F.line = 83;
-			result_120437 = (cmp_7058(a_120435, b_120436) == 0);
-			break;
-		case 1:
-			F.line = 84;
-			result_120437 = (nsuCmpIgnoreCase(a_120435, b_120436) == 0);
-			break;
-		case 2:
-			F.line = 85;
-			result_120437 = (nsuCmpIgnoreStyle(a_120435, b_120436) == 0);
-			break;
-		}
-	framePtr = F.prev;
-
-	return result_120437;
-
-}
-
-function next_try_120614(h_120616, max_hash_120617) {
-	var result_120618 = 0;
-
-	var F={procname:"strtabs.nextTry",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 92;
-		result_120618 = (addInt(mulInt(5, h_120616), 1) & max_hash_120617);
-	framePtr = F.prev;
-
-	return result_120618;
-
-}
-
-function raw_get_120633(t_120635, key_120636) {
-	var result_120637 = 0;
-
-	var F={procname:"strtabs.rawGet",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		F.line = 95;
-		var h_120646 = (myhash_120412(t_120635, key_120636) & (t_120635.data != null ? (t_120635.data.length-1) : -1));
-		L1: do {
-			F.line = 96;
-				L2: while (true) {
-				if (!t_120635.data[chckIndx(h_120646, 0, t_120635.data.length+0-1)-0].Field2) break L2;
-					if (my_cmp_120432(t_120635, t_120635.data[chckIndx(h_120646, 0, t_120635.data.length+0-1)-0].Field0, key_120636)) {
-					F.line = 98;
-					result_120637 = h_120646;
-					break BeforeRet;
-					}
-					
-					F.line = 99;
-					h_120646 = next_try_120614(h_120646, (t_120635.data != null ? (t_120635.data.length-1) : -1));
-				}
-		} while(false);
-		F.line = 100;
-		result_120637 = -1;
-	} while (false);
-	framePtr = F.prev;
-
-	return result_120637;
-
 }
 
 function sys_fatal_20437(message_20443) {
@@ -1048,334 +566,140 @@ function failed_assert_impl_20481(msg_20483) {
 	
 }
 
-function must_rehash_120451(length_120453, counter_120454) {
-	var result_120455 = false;
-
-	var F={procname:"strtabs.mustRehash",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		if (!((counter_120454 < length_120453))) {
-		F.line = 88;
-		failed_assert_impl_20481(makeNimstrLit("D:\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim(88, 9) `\x0Acounter < length` "));
-		}
-		
-		F.line = 89;
-		result_120455 = ((mulInt(length_120453, 2) < mulInt(counter_120454, 3)) || (subInt(length_120453, counter_120454) < 4));
-	framePtr = F.prev;
-
-	return result_120455;
-
-}
-
-function raw_insert_120887(t_120889, data_120891, data_120891_Idx, key_120892, val_120893) {
-	var F={procname:"strtabs.rawInsert",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 132;
-		var h_120902 = (myhash_120412(t_120889, key_120892) & (data_120891[data_120891_Idx] != null ? (data_120891[data_120891_Idx].length-1) : -1));
-		L1: do {
-			F.line = 133;
-				L2: while (true) {
-				if (!data_120891[data_120891_Idx][chckIndx(h_120902, 0, data_120891[data_120891_Idx].length+0-1)-0].Field2) break L2;
-					F.line = 134;
-					h_120902 = next_try_120614(h_120902, (data_120891[data_120891_Idx] != null ? (data_120891[data_120891_Idx].length-1) : -1));
-				}
-		} while(false);
-		F.line = 135;
-		data_120891[data_120891_Idx][chckIndx(h_120902, 0, data_120891[data_120891_Idx].length+0-1)-0].Field0 = nimCopy(null, key_120892, NTI138);
-		F.line = 136;
-		data_120891[data_120891_Idx][chckIndx(h_120902, 0, data_120891[data_120891_Idx].length+0-1)-0].Field1 = nimCopy(null, val_120893, NTI138);
-		F.line = 137;
-		data_120891[data_120891_Idx][chckIndx(h_120902, 0, data_120891[data_120891_Idx].length+0-1)-0].Field2 = true;
-	framePtr = F.prev;
-
-	
-}
-
-function enlarge_120925(t_120927) {
-	var F={procname:"strtabs.enlarge",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 140;
-		var n_120928 = [null];
-		F.line = 141;
-		n_120928[0] = new Array(chckRange(mulInt((t_120927.data != null ? t_120927.data.length : 0), 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_120927.data != null ? t_120927.data.length : 0), 2), 0, 2147483647);++i) {n_120928[0][i]={Field0: null, Field1: null, Field2: false};}		L1: do {
-			F.line = 142;
-			var i_120965 = 0;
-			F.line = 2000;
-			var colontmp__120978 = 0;
-			F.line = 142;
-			colontmp__120978 = (t_120927.data != null ? (t_120927.data.length-1) : -1);
-			F.line = 2006;
-			var res_120981 = 0;
-			L2: do {
-				F.line = 2007;
-					L3: while (true) {
-					if (!(res_120981 <= colontmp__120978)) break L3;
-						F.line = 2008;
-						i_120965 = res_120981;
-						if (t_120927.data[chckIndx(i_120965, 0, t_120927.data.length+0-1)-0].Field2) {
-						F.line = 143;
-						raw_insert_120887(t_120927, n_120928, 0, t_120927.data[chckIndx(i_120965, 0, t_120927.data.length+0-1)-0].Field0, t_120927.data[chckIndx(i_120965, 0, t_120927.data.length+0-1)-0].Field1);
-						}
-						
-						F.line = 2009;
-						res_120981 = addInt(res_120981, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 144;
-		var Tmp4 = t_120927.data; t_120927.data = n_120928[0]; n_120928[0] = Tmp4;	framePtr = F.prev;
-
-	
-}
-
-function nstPut(t_121000, key_121001, val_121002) {
-	var F={procname:"strtabs.[]=",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 148;
-		var index_121003 = raw_get_120633(t_121000, key_121001);
-		if ((0 <= index_121003)) {
-		F.line = 150;
-		t_121000.data[chckIndx(index_121003, 0, t_121000.data.length+0-1)-0].Field1 = nimCopy(null, val_121002, NTI138);
-		}
-		else {
-			if (must_rehash_120451((t_121000.data != null ? t_121000.data.length : 0), t_121000.counter)) {
-			F.line = 152;
-			enlarge_120925(t_121000);
-			}
-			
-			F.line = 153;
-			raw_insert_120887(t_121000, t_121000, "data", key_121001, val_121002);
-			F.line = 154;
-			t_121000.counter = addInt(t_121000.counter, 1);
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-
-function nstnewStringTableWithTableConstr(key_value_pairs_121361, mode_121362) {
-	var result_121363 = null;
-
-	var F={procname:"strtabs.newStringTable",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 211;
-		result_121363 = nstnewStringTable(mode_121362);
-		L1: do {
-			F.line = 212;
-			var key_121402 = null;
-			F.line = 212;
-			var val_121403 = null;
-			F.line = 2159;
-			var i_121407 = 0;
-			L2: do {
-				F.line = 2160;
-					L3: while (true) {
-					if (!(i_121407 < (key_value_pairs_121361 != null ? key_value_pairs_121361.length : 0))) break L3;
-						F.line = 2161;
-						key_121402 = key_value_pairs_121361[chckIndx(i_121407, 0, key_value_pairs_121361.length+0-1)-0]["Field0"];
-						F.line = 2161;
-						val_121403 = key_value_pairs_121361[chckIndx(i_121407, 0, key_value_pairs_121361.length+0-1)-0]["Field1"];
-						F.line = 212;
-						nstPut(result_121363, key_121402, val_121403);
-						F.line = 2162;
-						i_121407 = addInt(i_121407, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_121363;
-
-}
-var colors_123064 = nstnewStringTableWithTableConstr([], 0);
-nstPut(colors_123064, makeNimstrLit("C"), makeNimstrLit("255, 0, 0"));
-nstPut(colors_123064, makeNimstrLit("B"), makeNimstrLit("100, 50, 0"));
-nstPut(colors_123064, makeNimstrLit("S"), makeNimstrLit("255, 200, 150"));
-nstPut(colors_123064, makeNimstrLit("O"), makeNimstrLit("0, 0, 255"));
-nstPut(colors_123064, makeNimstrLit("Y"), makeNimstrLit("255, 255, 0"));
-nstPut(colors_123064, makeNimstrLit("W"), makeNimstrLit("255, 255, 255"));
-nstPut(colors_123064, makeNimstrLit("_"), makeNimstrLit("229, 230, 232"));
-var root_123065 = [null];
-
-function nstTake(t_120684, key_120685) {
-	var result_120687 = [null, 0];
-	var result_120687_Idx = 0;
-
-	var F={procname:"strtabs.[]",prev:framePtr,filename:"..\\..\\..\\msys64\\mingw64\\lib\\nim\\pure\\strtabs.nim",line:0};
-	framePtr = F;
-		F.line = 103;
-		var index_120691 = raw_get_120633(t_120684, key_120685);
-		if ((0 <= index_120691)) {
-		F.line = 104;
-		result_120687 = t_120684.data[chckIndx(index_120691, 0, t_120684.data.length+0-1)-0]; result_120687_Idx = "Field1";
-		}
-		else {
-			F.line = 2807;
-			var e_120807 = null;
-			F.line = 2808;
-			e_120807 = {m_type: NTI3854, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
-			F.line = 107;
-			e_120807.message = nimCopy(null, (makeNimstrLit("key not found: ")).concat(key_120685), NTI138);
-			F.line = 2803;
-			e_120807.parent = null;
-			F.line = 107;
-			raiseException(e_120807, "KeyError");
-		}
-		
-	framePtr = F.prev;
-
-	return [result_120687, result_120687_Idx];
-
-}
-
-function join_123117(a_123122, sep_123124) {
-	var result_123125 = null;
-
-		result_123125 = nimCopy(null, [], NTI138);
-		L1: do {
-			var i_123170 = 0;
-			var x_123171 = 0;
-			var i_123177 = 0;
-			L2: do {
-					L3: while (true) {
-					if (!(i_123177 < (a_123122 != null ? a_123122.length : 0))) break L3;
-						i_123170 = i_123177;
-						x_123171 = a_123122[i_123177];
-						if ((0 < i_123170)) {
-						if (result_123125 != null) { result_123125 = (result_123125).concat(sep_123124); } else { result_123125 = sep_123124.slice(); };
-						}
-						
-						if (result_123125 != null) { result_123125 = (result_123125).concat(cstrToNimstr((x_123171)+"")); } else { result_123125 = cstrToNimstr((x_123171)+"").slice(); };
-						i_123177 += 1;
-					}
-			} while(false);
-		} while(false);
-
-	return result_123125;
-
-}
-
-function get_random_value_123082() {
-	var result_123084 = 0;
-
-	var F={procname:"pixel_mario.getRandomValue",prev:framePtr,filename:"pixel_mario.nim",line:0};
-	framePtr = F;
-		F.line = 44;
-		result_123084 = Math.floor((Math.random() * 2.5600000000000000e+002));
-	framePtr = F.prev;
-
-	return result_123084;
-
-}
-
-function on_pixel_click_123109(value_123111, ev_123112) {
+function on_pixel_click_119112(value_119114, ev_119115) {
 	var F={procname:"pixel_mario.onPixelClick",prev:framePtr,filename:"pixel_mario.nim",line:0};
 	framePtr = F;
-		F.line = 47;
-		nstPut(colors_123064, value_123111, join_123117([get_random_value_123082(), get_random_value_123082(), get_random_value_123082()], makeNimstrLit(" , ")));
-		F.line = 48;
-		document.body.removeChild(root_123065[0]);
-		F.line = 49;
-		main_123080();
+		F.line = 37;
+		var new_color_119194 = join_119120([get_random_value_119085(), get_random_value_119085(), get_random_value_119085()], makeNimstrLit(" , "));
+		F.line = 38;
+		var element_list_119195 = document.querySelectorAll(toJSStr((makeNimstrLit("div[data-value=\'")).concat(value_119114,makeNimstrLit("\']"))));
+		L1: do {
+			F.line = 39;
+			var item_119415 = null;
+			F.line = 3822;
+			var i_119419 = 0;
+			F.line = 3823;
+			var l_119421 = (element_list_119195 != null ? element_list_119195.length : 0);
+			L2: do {
+				F.line = 3824;
+					L3: while (true) {
+					if (!(i_119419 < l_119421)) break L3;
+						F.line = 3825;
+						item_119415 = element_list_119195[chckIndx(i_119419, 0, element_list_119195.length+0-1)-0];
+						F.line = 40;
+						item_119415.style.backgroundColor = toJSStr((makeNimstrLit("rgb(")).concat(new_color_119194,makeNimstrLit(")")));
+						F.line = 3826;
+						i_119419 = addInt(i_119419, 1);
+						if (!(((element_list_119195 != null ? element_list_119195.length : 0) == l_119421))) {
+						F.line = 3827;
+						failed_assert_impl_20481(makeNimstrLit("D:\\msys64\\mingw64\\lib\\nim\\system.nim(3827, 11) `len(a) == L` seq modified while iterating over it"));
+						}
+						
+					}
+			} while(false);
+		} while(false);
 	framePtr = F.prev;
 
 	
 }
 
-function render_pixel_123204(value_123206) {
-		var Tmp1;
+function render_pixel_119435(col_data_119437) {
 
-		function HEX3Aanonymous_123209(ev_123211) {
+		function HEX3Aanonymous_119441(ev_119443) {
 			var F={procname:"renderPixel.:anonymous",prev:framePtr,filename:"pixel_mario.nim",line:0};
 			framePtr = F;
-				F.line = 58;
-				on_pixel_click_123109(value_123206, ev_123211);
+				F.line = 51;
+				on_pixel_click_119112(value_119440, ev_119443);
 			framePtr = F.prev;
 
 			
 		}
 
-	var result_123207 = null;
+	var result_119438 = null;
 
 	var F={procname:"pixel_mario.renderPixel",prev:framePtr,filename:"pixel_mario.nim",line:0};
 	framePtr = F;
 	BeforeRet: do {
-		F.line = 52;
-		var col_123208 = document.createElement("div");
+		F.line = 43;
+		var col_119439 = document.createElement("div");
+		F.line = 44;
+		var value_119440 = nimCopy(null, col_data_119437.Field0, NTI138);
+		F.line = 45;
+		col_119439.setAttribute("data-value", toJSStr(value_119440));
+		F.line = 46;
+		col_119439.style.backgroundColor = toJSStr((makeNimstrLit("rgb(")).concat(col_data_119437.Field1,makeNimstrLit(")")));
+		F.line = 47;
+		col_119439.style.width = "20px";
+		F.line = 48;
+		col_119439.style.height = "20px";
+		F.line = 49;
+		col_119439.style.display = "inline-block";
+		F.line = 50;
+		col_119439.addEventListener("click", HEX3Aanonymous_119441, false);
 		F.line = 53;
-		col_123208.style.backgroundColor = toJSStr((makeNimstrLit("rgb(")).concat((Tmp1 = nstTake(colors_123064, value_123206), Tmp1[0])[Tmp1[1]],makeNimstrLit(")")));
-		F.line = 54;
-		col_123208.style.width = "20px";
-		F.line = 55;
-		col_123208.style.height = "20px";
-		F.line = 56;
-		col_123208.style.display = "inline-block";
-		F.line = 57;
-		col_123208.addEventListener("click", HEX3Aanonymous_123209, false);
-		F.line = 60;
-		result_123207 = col_123208;
+		result_119438 = col_119439;
 		break BeforeRet;
 	} while (false);
 	framePtr = F.prev;
 
-	return result_123207;
+	return result_119438;
 
 }
 
-function render_canvas_123239(root_123241) {
+function render_canvas_119471(root_119473) {
 	var F={procname:"pixel_mario.renderCanvas",prev:framePtr,filename:"pixel_mario.nim",line:0};
 	framePtr = F;
 		L1: do {
-			F.line = 63;
-			var row_data_123302 = [null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+			F.line = 56;
+			var row_data_119534 = [{Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}, {Field0: null, Field1: null}];
 			F.line = 2173;
-			var i_123372 = 0;
-			if ((i_123372 <= 16)) {
+			var i_119604 = 0;
+			if ((i_119604 <= 16)) {
 			L2: do {
 				F.line = 2175;
 					L3: while (true) {
 					if (!true) break L3;
 						F.line = 2176;
-						nimCopy(row_data_123302, pixel_data_123021[chckIndx(i_123372, 0, pixel_data_123021.length+0-1)-0], NTI123023);
-						F.line = 64;
-						var row_123303 = document.createElement("div");
-						F.line = 65;
-						row_123303.style.height = "20px";
+						nimCopy(row_data_119534, pixel_data_119035[chckIndx(i_119604, 0, pixel_data_119035.length+0-1)-0], NTI119037);
+						F.line = 57;
+						var row_119535 = document.createElement("div");
+						F.line = 58;
+						row_119535.style.height = "20px";
 						L4: do {
-							F.line = 66;
-							var col_123364 = null;
+							F.line = 59;
+							var col_data_119596 = {Field0: null, Field1: null};
 							F.line = 2173;
-							var i_123369 = 0;
-							if ((i_123369 <= 13)) {
+							var i_119601 = 0;
+							if ((i_119601 <= 13)) {
 							L5: do {
 								F.line = 2175;
 									L6: while (true) {
 									if (!true) break L6;
 										F.line = 2176;
-										col_123364 = row_data_123302[chckIndx(i_123369, 0, row_data_123302.length+0-1)-0];
-										F.line = 67;
-										row_123303.appendChild(render_pixel_123204(col_123364));
-										if ((13 <= i_123369)) {
+										nimCopy(col_data_119596, row_data_119534[chckIndx(i_119601, 0, row_data_119534.length+0-1)-0], NTI119015);
+										F.line = 60;
+										row_119535.appendChild(render_pixel_119435(col_data_119596));
+										if ((13 <= i_119601)) {
 										F.line = 2177;
 										break L5;
 										}
 										
 										F.line = 2178;
-										i_123369 = addInt(i_123369, 1);
+										i_119601 = addInt(i_119601, 1);
 									}
 							} while(false);
 							}
 							
 						} while(false);
-						F.line = 68;
-						root_123241.appendChild(row_123303);
-						if ((16 <= i_123372)) {
+						F.line = 61;
+						root_119473.appendChild(row_119535);
+						if ((16 <= i_119604)) {
 						F.line = 2177;
 						break L2;
 						}
 						
 						F.line = 2178;
-						i_123372 = addInt(i_123372, 1);
+						i_119604 = addInt(i_119604, 1);
 					}
 			} while(false);
 			}
@@ -1386,31 +710,31 @@ function render_canvas_123239(root_123241) {
 	
 }
 
-function main_123080() {
+function main_119618() {
 	var F={procname:"pixel_mario.main",prev:framePtr,filename:"pixel_mario.nim",line:0};
 	framePtr = F;
-		F.line = 71;
-		root_123065[0] = document.createElement("div");
-		F.line = 72;
-		root_123065[0].style.background = "white";
-		F.line = 73;
-		root_123065[0].style.minHeight = "100vh";
-		F.line = 74;
-		render_canvas_123239(root_123065[0]);
-		F.line = 75;
-		document.body.appendChild(root_123065[0]);
+		F.line = 64;
+		var root_119620 = document.createElement("div");
+		F.line = 65;
+		root_119620.style.background = "white";
+		F.line = 66;
+		root_119620.style.minHeight = "100vh";
+		F.line = 67;
+		render_canvas_119471(root_119620);
+		F.line = 68;
+		document.body.appendChild(root_119620);
 	framePtr = F.prev;
 
 	
 }
 
-function on_load_123401(event_123403) {
+function on_load_119634(event_119636) {
 	var F={procname:"pixel_mario.onLoad",prev:framePtr,filename:"pixel_mario.nim",line:0};
 	framePtr = F;
-		F.line = 78;
-		main_123080();
+		F.line = 71;
+		main_119618();
 	framePtr = F.prev;
 
 	
 }
-window.onload = on_load_123401;
+window.onload = on_load_119634;
